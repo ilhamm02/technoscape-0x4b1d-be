@@ -7,4 +7,6 @@ const { authToken, auth } = require("../helper/authToken");
 routers.post("/login", userControllers.login)
 routers.post("/register", userControllers.register)
 routers.patch("/editProfile", userControllers.editProfile)
+routers.patch("/editEmail", userControllers.editEmail)
+routers.post("/verification", userControllers.verificationOtp)
 module.exports = routers

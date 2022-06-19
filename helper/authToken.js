@@ -18,7 +18,7 @@ module.exports = {
       if (err) {
         return res.status(401).send({ errMessage: "Can't decode token" });
       }
-      req.dataDecode = decode; //decrypt token back into user data
+      req.dataDecode = decode;
 
       next();
     });
