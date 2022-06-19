@@ -1,5 +1,7 @@
 const userRouters = require('./userRouters')
+const scanRouters = require('./scanRouters')
 
 module.exports = {
-    userRouters
+    userRouters,
+    scanRouters
 }
